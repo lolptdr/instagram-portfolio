@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Custon variable */
+/* Custom variables */
 /* Override Bootstrap variables */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
@@ -6767,8 +6767,7 @@ header {
   height: 600px;
   overflow: hidden;
 }
-
-img {
+header img {
   position: fixed;
   top: 0px;
   left: 50%;
@@ -6776,12 +6775,39 @@ img {
   width: 1200px;
 }
 @media screen and (min-width: 1200px) {
-  img {
+  header img {
     top: auto;
     left: auto;
     margin: 0;
     width: 100%;
   }
+}
+header .name {
+  font-size: 21px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  color: #FFF;
+}
+header .titles {
+  position: absolute;
+  bottom: 40%;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  header .titles {
+    bottom: 50%;
+  }
+}
+header h1, header h2 {
+  width: 100%;
+  color: #FFF;
+  margin: 0;
+}
+
+.fancy-font {
+  font-family: "Kaushan Script", cursive;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-/* Custon variable */
+/* Custom variables */
 $main-font: 'Lato', sans-serif;
 $sub-font: 'Montserrat', sans-serif;
 $fancy-font: 'Kaushan Script', cursive;
@@ -33,20 +33,45 @@ header {
   max-height: 600px;
   height: 600px;
   overflow: hidden;
+  img {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    margin-left: -600px;
+    width: 1200px;
+
+    @media screen and (min-width: $screen-lg) {
+      top: auto;
+      left: auto;
+      margin: 0;
+      width: 100%;
+    }
+  }
+  .name {
+    font-size: 21px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: $white;
+  }
+  .titles {
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+    text-align: center;
+
+    @media screen and (min-width: $screen-lg) {
+      bottom: 50%;
+    }
+  }
+  h1, h2 {
+    width: 100%;
+    color: $white;
+    margin: 0;
+  }
 }
 
-img {
-  position: fixed;
-  top: 0px;
-  left: 50%;
-  margin-left: -600px;
-  width: 1200px;
-
-  @media screen and (min-width: $screen-lg) {
-    top: auto;
-    left: auto;
-    margin: 0;
-    width: 100%;
-  }
+.fancy-font {
+  font-family: $fancy-font;
 }
 
