@@ -17,7 +17,7 @@ $margin: 10px;
 /* Override Bootstrap variables */
 $font-family-sans-serif: $main-font;
 
-@import 'bootstrap';
+@import '_bootstrap';
 
 * {
   postion: relative;
